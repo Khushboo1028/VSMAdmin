@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:id="@+id/mainrel">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bodoni"
+            android:text="@string/company_name"
+            android:id="@+id/company_name_text"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/ic_exit"
+            android:layout_alignParentRight="true"
+            android:id="@+id/logout"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/company_name_text"
+            android:weightSum="2"
+            android:id="@+id/buttons_layout">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="42dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:background="@drawable/black_rounded_corners"
+                android:layout_marginHorizontal="16dp"
+                android:text="@string/users"
+                android:fontFamily="@font/spd_semibold"
+                android:layout_weight="1"
+                android:id="@+id/btn_users"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="42dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:background="@drawable/black_rounded_corners"
+                android:layout_marginHorizontal="16dp"
+                android:text="@string/collections_text"
+                android:fontFamily="@font/spd_medium"
+                android:layout_weight="1"
+                android:id="@+id/btn_collections"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/buttons_layout"
+            android:fontFamily="@font/spd_medium"
+            android:text="@string/new_users_text"
+            android:layout_marginTop="24dp"
+            android:id="@+id/tv_unaccepted_users"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_unaccepted_users"
+            android:layout_marginTop="24dp"
+            android:paddingBottom="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:clipToPadding="false"
+            android:id="@+id/user_recycler_view"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

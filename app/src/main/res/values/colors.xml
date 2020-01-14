@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#008577</color>-->
+<!--    <color name="colorPrimaryDark">#00574B</color>-->
+<!--    <color name="colorAccent">#D81B60</color>-->
+
+
+    // For VSMAdmin by RTLLP
+
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#D0D0D0</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="lightBlack">#1F1F1F</color>
+    <color name="lightGrey">#D0D0D0</color>
+
+    <color name="hintGrey">#A5A5A5</color>
+
+
+    <color name="red">#E0313F</color>
+    <color name="green">#137E00</color>
+
+</resources>

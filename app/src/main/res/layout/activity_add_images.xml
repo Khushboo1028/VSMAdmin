@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Catalogues.AddImagesActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/bodoni"
+        android:text="@string/company_name"
+        android:id="@+id/company_name_text"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:src="@drawable/ic_back_black"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:paddingStart="5dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/back"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:src="@drawable/ic_check_black"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:paddingStart="5dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/save"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/back"
+        android:id="@+id/nestedScrollView">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/back"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:id="@+id/mainrel">
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="On HomePage"
+                android:fontFamily="@font/spd_medium"
+                android:textColor="@color/black"
+                android:checked="true"
+                android:layout_marginTop="16dp"
+                android:buttonTint="@color/black"
+                android:id="@+id/checkbox_home_page"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home Image"
+                android:textSize="24dp"
+                android:layout_below="@id/checkbox_home_page"
+                android:fontFamily="@font/hoefler_regular"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"
+                android:id="@+id/tv_home_image"/>
+
+            <ImageView
+                android:layout_width="1280px"
+                android:layout_height="875px"
+                android:src="@drawable/add_home_image"
+                android:layout_marginVertical="8dp"
+                android:layout_below="@id/tv_home_image"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"
+                android:id="@+id/home_image"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Catalogue Image"
+                android:fontFamily="@font/hoefler_regular"
+                android:layout_below="@id/home_image"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"
+                android:textSize="24dp"
+                android:id="@+id/tv_catalogue_image"/>
+
+            <ImageView
+                android:layout_width="875px"
+                android:layout_height="1280px"
+                android:src="@drawable/add_catalog_image"
+                android:background="@drawable/grey_rounded_corners"
+                android:layout_marginVertical="8dp"
+                android:layout_below="@id/tv_catalogue_image"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"
+                android:id="@+id/catalogue_image"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saree Images"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hoefler_regular"
+                android:layout_below="@id/catalogue_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:textSize="24dp"
+                android:id="@+id/tv_saree_image"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/tv_saree_image"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/linearLayout">
+
+                <ImageView
+                    android:id="@+id/add_photo"
+                    android:layout_width="60dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_add_photo" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:id="@+id/recycler_view_images"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginTop="12dp"
+                android:padding="5dp"
+                app:reverseLayout="true"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PDF"
+                android:fontFamily="@font/hoefler_regular"
+                android:layout_below="@id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:id="@+id/tv_pdf"/>
+
+            <ImageView
+                android:layout_width="165dp"
+                android:layout_height="239dp"
+                android:src="@drawable/ic_add_pdf"
+                android:background="@drawable/grey_rounded_corners"
+                android:layout_marginVertical="8dp"
+                android:layout_below="@id/tv_pdf"
+                android:layout_centerHorizontal="true"
+                android:scaleType="center"
+                android:id="@+id/pdf_image"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pdf_image"
+                android:layout_marginTop="120dp"
+                android:paddingVertical="18dp"
+                android:layout_marginHorizontal="16dp"
+                android:fontFamily="@font/spd_medium"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:background="@drawable/black_rounded_corners"
+                android:text="Next"
+                android:id="@+id/btn_next"/>
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/black"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBar"/>
+</RelativeLayout>

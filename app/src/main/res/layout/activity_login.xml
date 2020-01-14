@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:id="@+id/mainrel">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:padding="16dp"
+            android:id="@+id/header_frame">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bodoni"
+            android:text="@string/company_name"
+            android:id="@+id/company_name_text"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:layout_below="@id/header_frame"
+            android:layout_marginTop="24dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/spd_medium"
+            android:text="Welcome Admin"
+            android:id="@+id/welcome_text"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:id="@+id/login_layout"
+            android:layout_below="@id/welcome_text">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/et_phone"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/black"
+            android:hint="Email"
+            android:textColorHint="@color/hintGrey"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/spd_medium"
+            android:id="@+id/et_email"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/et_phone"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/black"
+                android:hint="Password"
+                android:textColorHint="@color/hintGrey"
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                android:fontFamily="@font/spd_medium"
+                android:id="@+id/et_password"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Password"
+                android:fontFamily="@font/spd_medium"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                android:id="@+id/showPass"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:paddingVertical="18dp"
+                android:layout_marginHorizontal="16dp"
+                android:fontFamily="@font/spd_medium"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:background="@drawable/black_rounded_corners"
+                android:text="LOGIN"
+                android:id="@+id/btn_login"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/black"
+        android:id="@+id/progressBar"/>
+
+</RelativeLayout>

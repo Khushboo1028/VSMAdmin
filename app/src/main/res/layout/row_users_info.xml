@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:id="@+id/mainrel">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:fontFamily="@font/spd_medium"
+            android:text="RTLLP"
+            android:id="@+id/tv_company_name"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="6dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/spd_medium"
+            android:text="Khushboo Gandhi"
+            android:id="@+id/tv_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/spd_medium"
+            android:text="9876543210"
+            android:id="@+id/tv_phone"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="6dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/spd_medium"
+            android:text="JSHAGYKHJW34"
+            android:id="@+id/tv_gst_no"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="6dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/spd_medium"
+            android:text="Surat"
+            android:id="@+id/tv_city"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="6dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/spd_medium"
+            android:text="Gujarat"
+            android:id="@+id/tv_state"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="6dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/spd_medium"
+            android:text="Approved"
+            android:id="@+id/tv_status"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="6dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/spd_medium"
+            android:text="DATE HERE"
+            android:id="@+id/tv_date_created"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="6dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/spd_medium"
+            android:text="2rl3flanfkwelf"
+            android:id="@+id/tv_document_id"/>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="16dp"
+        android:paddingVertical="24dp"
+        android:text="Approve"
+        android:background="@drawable/green_rounded_corners"
+        android:textColor="@color/white"
+        android:fontFamily="@font/spd_medium"
+        android:layout_toRightOf="@id/mainrel"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btn_approve"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hintGrey"
+        android:layout_margin="16dp"
+        android:layout_below="@id/mainrel"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/black"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBar"/>
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">VSM Admin</string>
+
+
+    <string name="company_name">Vision Silk Mills</string>
+    <string name="admin_phone_number">+919998537832</string>
+
+    <string name="collections_text">Collections</string>
+    <string name="new_users_text">New Users</string>
+    <string name="VSM_weaves">Omjin Sarees</string>
+    <string name="VSM_sarees">V.S.M Sarees</string>
+
+    <string name="none">None</string>
+    <string name="best_seller">Best Seller</string>
+    <string name="featured">Featured</string>
+    <string name="new_arrivals">New Arrivals</string>
+    <string name="default_notification_channel_id">NOTIF</string>
+
+
+    <string-array name="india_states">
+        <item>Andaman and Nicobar Islands</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+        <item>Chhattisgarh</item>
+        <item>Dadra and Nagar Haveli</item>
+        <item>Daman and Diu</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Lakshadweep</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Orissa</item>
+        <item>Pondicherry</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttaranchal</item>
+        <item>Uttar Pradesh</item>
+        <item>West Bengal</item>
+    </string-array>
+
+    <!--    Firebase Catalogue Strings DO NOT CHANGE-->
+    <string name="catalogues">catalogues</string>
+    <string name="catalogue_image_url">catalogue_image_url</string>
+    <string name="date_created">date_created</string>
+    <string name="fabric">fabric</string>
+    <string name="home">home</string>
+    <string name="home_image_url">home_image_url</string>
+    <string name="home_text">home_text</string>
+    <string name="name">name</string>
+    <string name="packaging">packaging</string>
+    <string name="pieces">pieces</string>
+    <string name="price">price</string>
+    <string name="saree_image_url">saree_image_url</string>
+    <string name="saree_length">saree_length</string>
+    <string name="tag">tag</string>
+    <string name="type">type</string>
+    <string name="pdf_url">pdf_url</string>
+    <string name="doc_ref">doc_ref</string>
+
+    <!--    Firebase Users Strings DO NOT CHANGE-->
+
+    <string name="superuser">superuser</string>
+    <string name="admin_name">jinesh</string>
+    <string name="email">email</string>
+    <string name="token">token</string>
+
+
+    <string name="users">users</string>
+    <string name="city">city</string>
+    <string name="state">state</string>
+    <string name="company">company</string>
+    <string name="dealer">dealer</string>
+    <string name="gst">gst</string>
+    <string name="phone">phone</string>
+    <string name="name_user">name</string>
+</resources>

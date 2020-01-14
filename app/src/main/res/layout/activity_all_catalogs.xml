@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Catalogues.AllCatalogsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:id="@+id/mainrel">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_back_black"
+            android:id="@+id/back"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bodoni"
+            android:text="@string/company_name"
+            android:id="@+id/company_name_text"/>
+
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_add_catalog"
+            android:id="@+id/add_catalog"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_rel"
+            android:orientation="horizontal"
+            android:layout_below="@id/company_name_text"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/edittext_borders_lighter">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_vertical"
+                android:padding="4dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search Catalog Name"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:selectAllOnFocus="true"
+                android:textSize="20dp"
+                android:background="@null"
+                android:padding="5dp"
+                android:fontFamily="@font/spd_medium"
+                android:layout_marginHorizontal="8dp"
+                android:id="@+id/search_field"
+                />
+
+
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search_rel"
+            android:layout_marginTop="16dp"
+            android:id="@+id/nestedScrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hoefler_regular"
+                android:text="Home Catalog"
+                android:layout_marginTop="12dp"
+                android:id="@+id/tv_home_catalog"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_home_catalog"
+                android:layout_marginTop="24dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:clipToPadding="false"
+                android:id="@+id/home_recycler_view"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/home_recycler_view"
+                android:fontFamily="@font/hoefler_regular"
+                android:text="All Catalogs"
+                android:layout_marginTop="12dp"
+                android:id="@+id/tv_all_catalogs"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_all_catalogs"
+                android:layout_marginTop="24dp"
+                android:paddingBottom="16dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:clipToPadding="false"
+                android:id="@+id/all_catalogs_recycler_view"
+                />
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

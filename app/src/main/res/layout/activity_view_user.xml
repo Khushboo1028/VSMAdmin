@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:id="@+id/mainrel">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_back_black"
+                android:id="@+id/back"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="@string/company_name"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bodoni"
+                android:textSize="36dp"
+                android:id="@+id/company_name_text"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentEnd="true"
+                android:padding="5dp"
+                android:src="@drawable/ic_check_black"
+                android:visibility="gone"
+                android:id="@+id/save"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/company_name_text"
+                android:layout_marginTop="36dp"
+                android:text="Profile"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hoefler_regular"
+                android:textSize="24dp"
+                android:id="@+id/profile_text"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/black"
+                android:layout_below="@id/profile_text"
+                android:text="+91"
+                android:textColor="@color/black"
+                android:enabled="false"
+                android:fontFamily="@font/spd_medium"
+                android:id="@+id/country_code"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:textSize="18dp"
+                android:maxLength="10"
+                android:layout_below="@id/profile_text"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/black"
+                android:layout_toRightOf="@id/country_code"
+                android:inputType="phone"
+                android:hint="Phone Number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hintGrey"
+                android:fontFamily="@font/spd_medium"
+                android:id="@+id/et_phone"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/et_phone"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/black"
+                android:hint="Name"
+                android:textColorHint="@color/hintGrey"
+                android:textColor="@color/black"
+                android:inputType="textCapWords"
+                android:fontFamily="@font/spd_medium"
+                android:id="@+id/et_name"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/et_name"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/black"
+                android:hint="Company Name"
+                android:textColorHint="@color/hintGrey"
+                android:textColor="@color/black"
+                android:inputType="textCapWords"
+                android:fontFamily="@font/spd_medium"
+                android:id="@+id/et_company_name"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/et_company_name"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/black"
+                android:hint="GST Number"
+                android:textColorHint="@color/hintGrey"
+                android:textColor="@color/black"
+                android:inputType="textCapCharacters"
+                android:fontFamily="@font/spd_medium"
+                android:id="@+id/et_gst_no"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/et_gst_no"
+                android:layout_marginTop="16dp"
+                android:hint="City"
+                android:backgroundTint="@color/black"
+                android:textColorHint="@color/hintGrey"
+                android:textColor="@color/black"
+                android:inputType="textCapCharacters"
+                android:fontFamily="@font/spd_medium"
+                android:id="@+id/et_city"/>
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/et_city"
+                android:layout_marginTop="16dp"
+                android:id="@+id/state_spinner"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/state_spinner"
+                android:layout_marginTop="60dp"
+                android:paddingVertical="18dp"
+                android:layout_marginHorizontal="16dp"
+                android:fontFamily="@font/spd_medium"
+                android:textColor="@color/white"
+                android:background="@drawable/black_rounded_corners"
+                android:textSize="18dp"
+                android:text="Update"
+                android:id="@+id/btn_update"/>
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/black"
+        android:id="@+id/progressBar"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Catalogues.CatalogDetailsActivity">
+
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="5dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_back_black"
+                android:id="@+id/back"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="@string/company_name"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bodoni"
+                android:textSize="30dp"
+                android:id="@+id/company_name_text"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/company_name_text"
+                android:id="@+id/scrollView">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:id="@+id/mainrel">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:text="Catalogue"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hoefler_regular"
+                android:textSize="24dp"
+                android:id="@+id/catalog_text"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/details_layout"
+                android:layout_below="@id/catalog_text">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="16dp"
+                    android:visibility="gone"
+                    android:id="@+id/date_picker_layout">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_date_picker"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:fontFamily="@font/spd_medium"
+                        android:layout_marginHorizontal="6dp"
+                        android:id="@+id/tv_date"/>
+                </LinearLayout>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/type_spinner"/>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/et_phone"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@color/black"
+                    android:hint="Catalog Name"
+                    android:textColorHint="@color/hintGrey"
+                    android:textColor="@color/black"
+                    android:inputType="textCapWords"
+                    android:fontFamily="@font/spd_medium"
+                    android:id="@+id/et_name"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/et_phone"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@color/black"
+                    android:hint="Fabric"
+                    android:textColorHint="@color/hintGrey"
+                    android:textColor="@color/black"
+                    android:inputType="text"
+                    android:fontFamily="@font/spd_medium"
+                    android:id="@+id/et_fabric"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/et_phone"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@color/black"
+                    android:hint="Saree Length"
+                    android:textColorHint="@color/hintGrey"
+                    android:textColor="@color/black"
+                    android:inputType="textCapWords"
+                    android:fontFamily="@font/spd_medium"
+                    android:id="@+id/et_saree_length"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/et_phone"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@color/black"
+                    android:hint="Packaging"
+                    android:textColorHint="@color/hintGrey"
+                    android:textColor="@color/black"
+                    android:inputType="textCapWords"
+                    android:fontFamily="@font/spd_medium"
+                    android:id="@+id/et_packaging"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/et_phone"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@color/black"
+                    android:hint="Pieces"
+                    android:textColorHint="@color/hintGrey"
+                    android:textColor="@color/black"
+                    android:inputType="phone"
+                    android:fontFamily="@font/spd_medium"
+                    android:id="@+id/et_pieces"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/tag_spinner"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/et_phone"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@color/black"
+                    android:hint="Price"
+                    android:textColorHint="@color/hintGrey"
+                    android:textColor="@color/black"
+                    android:inputType="phone"
+                    android:fontFamily="@font/spd_medium"
+                    android:id="@+id/et_price"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="On HomePage"
+                    android:fontFamily="@font/spd_medium"
+                    android:textColor="@color/black"
+                    android:checked="true"
+                    android:layout_marginTop="16dp"
+                    android:buttonTint="@color/black"
+                    android:id="@+id/checkbox_home_page"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/et_phone"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@color/black"
+                    android:hint="Home Text"
+                    android:textColorHint="@color/hintGrey"
+                    android:textColor="@color/black"
+                    android:inputType="textCapWords"
+                    android:fontFamily="@font/spd_medium"
+                    android:id="@+id/et_home_text"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="View/Add Images"
+                    android:fontFamily="@font/spd_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_marginTop="16dp"
+                    android:paddingVertical="8dp"
+                    android:id="@+id/tv_view_images"/>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:paddingVertical="18dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:fontFamily="@font/spd_medium"
+                    android:textColor="@color/white"
+                    android:background="@drawable/black_rounded_corners"
+                    android:textSize="18dp"
+                    android:text="ADD/UPDATE CATALOG"
+                    android:id="@+id/btn_update"/>
+
+
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/black"
+        android:id="@+id/progressBar"/>
+
+</RelativeLayout>
